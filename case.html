@@ -2,66 +2,198 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Discriminant Formula Encyclopedia | 사례연결모음</title>
+  <title>Discriminant Formula | Real-World Application Cases</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family:'Segoe UI','Malgun Gothic',Arial,sans-serif; background:#f7fafd; color:#222; margin:0; }
-    .main { max-width:800px; margin:44px auto; background:#fff; border-radius:16px; box-shadow:0 3px 13px #e3eaf6; padding:38px 28px 32px 28px;}
-    h1 { color:#1273b6; font-size:2em; }
-    .case-list { margin:24px 0 0 0;}
-    .case { background:#f7f9fc; border-left:6px solid #fcb800; border-radius:7px; margin-bottom:18px; padding:13px 17px;}
-    .case-title { font-size:1.11em; font-weight:bold; color:#333;}
-    .case-field { color:#008ed1; font-size:0.98em;}
-    .submit { margin:20px 0 0 0; padding:14px 14px; background:#e8f3ff; border-radius:7px;}
-    .backlink {margin-top:26px;}
-    .backlink a { color:#1976d2; text-decoration:underline;}
-    @media (max-width:600px) { .main { padding:13px 3vw 19px 3vw;} }
+    body { background:#f7fafd; color:#223; font-family:'Segoe UI','Malgun Gothic',sans-serif; margin:0; }
+    .main { max-width:790px; margin:42px auto; background:#fff; border-radius:16px; box-shadow:0 2px 13px #eaf1fa; padding:38px 34px 38px 34px; }
+    h1 { color:#3567b7; font-size:2.04em; margin-bottom:7px; }
+    h2 { color:#4c7abe; font-size:1.24em; margin:16px 0 19px 0;}
+    .korean { color:#3a4460;}
+    .disc-box { background:#fffbe7; border-radius:12px; padding:18px 16px 16px 16px; margin:22px 0 30px 0; }
+    .truth-table { background:#f2f6fa; border-radius:7px; padding:12px 17px 12px 17px; margin:11px 0 14px 0; font-family:'Consolas','Menlo','monospace',monospace; font-size:1.07em;}
+    .truth-table-title { font-weight:bold; color:#155188; margin-bottom:6px; }
+    .truth-table pre { margin:0; font-family:inherit; font-size:1em; line-height:1.78; }
+    .desc { margin:15px 0 7px 0;}
+    .case-block { margin-bottom:32px; padding:17px 16px 16px 16px; background:#f7faff; border-radius:9px; border-left:6px solid #4c7abe;}
+    .case-title { font-size:1.12em; color:#1976d2; font-weight:bold; margin-bottom:3px;}
+    .sector { font-size:0.97em; color:#557;}
+    .case-detail { margin:10px 0 4px 13px; }
+    .conclusion { font-weight:bold; color:#a36300; }
+    .note { background:#f8feeb; border-radius:7px; margin:28px 0 0 0; padding:12px 15px; color:#205630; border-left:6px solid #bbf1b5; font-size:1.08em;}
+    a { color:#2477bb; }
+    a:hover { text-decoration:underline; }
   </style>
 </head>
 <body>
   <div class="main">
-    <h1>Discriminant Formula Encyclopedia<br><span style="font-size:0.76em; color:#395c82;">사례연결모음</span></h1>
-    <div>
-      <b>판별공식 적용 실제 사례 (Examples/Use-cases)</b><br>
-      아래는 실제 공식(AND 게이트, True/False, 진짜/가짜 공식 등)을 다양한 분야에 적용한 사례들입니다.<br>
-      새로운 사례/적용을 추가하거나 제안하려면 아래 안내를 참고하세요.
+    <h1>Discriminant Formula</h1>
+    <h2>Real-World Application Cases <span class="korean">| 실제 사례 모음</span></h2>
+    <div class="disc-box">
+      <div class="truth-table-title">AND Truth Table</div>
+      <div class="truth-table">
+<pre>
+Direction (방향성) AND Freedom (자유) AND Universality (보편성) 
+                                   = 진짜(True) or 가짜(False)
+
+True   AND True  AND True  = <b>True ✓</b>
+True   AND True  AND False = False
+True   AND False AND True  = False
+True   AND False AND False = False
+False  AND True  AND True  = False
+False  AND True  AND False = False
+False  AND False AND True  = False
+False  AND False AND False = False
+</pre>
+      </div>
+      <div class="desc">
+        <b>Among 8 combinations, only 1 is truly <span style="color:#1940b1;">"real"</span>.</b><br>
+        <b>Key Insight:</b> If even 1% of intention, freedom, or universality is missing, it’s not real.<br>
+        <span class="korean">
+        하나라도 False면 전체가 False입니다.<br>
+        (99% 선의도 + 1% 통제 = False, 99% 자유 + 1% 차별 = False)
+        </span>
+      </div>
     </div>
-    <div class="case-list">
-      <div class="case">
-        <div class="case-title">정통 종교, 신흥 종교, 가짜 스승 분석</div>
-        <div class="case-field">분야: Religion</div>
-        <div>
-          <b>공식:</b> Direction(방향성), Freedom(자유), Universality(보편성) 모두 True일 때만 진짜. <br>
-          <b>적용:</b> 초기 예수와 후대 교회, 신흥종교(가짜 교주) 등을 판별. <br>
-          <b>결론:</b> 하나라도 False면 가짜. 실제로 대부분 조직/종교/집단이 AND 판별을 통과 못함.
-        </div>
+    
+    <!-- CASE 1: Religion -->
+    <div class="case-block">
+      <div class="case-title">[Religion] — Christianity Example</div>
+      <div class="sector">(종교 · Religion)</div>
+      <div class="case-detail">
+        <b>Jesus (Early Original)</b><br>
+        - Direction: True (Love & Salvation)<br>
+        - Freedom: True ("The truth shall set you free")<br>
+        - Universality: True (All humanity)<br>
+        <span class="conclusion">→ Result: True ✓ (Genuine/original message)</span>
       </div>
-      <div class="case">
-        <div class="case-title">기업의 ESG(환경/사회/지배구조) 평가</div>
-        <div class="case-field">분야: Business</div>
-        <div>
-          <b>공식:</b> Environment(환경), Social(사회), Governance(지배구조) 모두 True이어야 지속가능한 진짜 ESG.<br>
-          <b>적용:</b> 한 축이라도 거짓(예: 사회적 약자 착취)이라면, 그 기업의 ESG는 가짜.
-        </div>
+      <div class="case-detail">
+        <b>Jesus (Later Institutionalized Church)</b><br>
+        - Direction: True (Still love)<br>
+        - Freedom: False (Condemns outsiders to hell)<br>
+        - Universality: True (Universal salvation claim)<br>
+        <span class="conclusion">→ Result: False ✗ (Fails test: 1% 통제/배제 → 전체 False)</span>
       </div>
-      <div class="case">
-        <div class="case-title">AI 윤리 — 편향/차별/통제의 문제</div>
-        <div class="case-field">분야: AI/Ethics</div>
-        <div>
-          <b>공식:</b> Freedom(자유), Universality(보편성), Transparency(투명성) 모두 True여야 신뢰할 수 있는 AI.<br>
-          <b>적용:</b> 1%라도 편향/차별/불투명성이 있다면, 그 AI는 신뢰 불가.
-        </div>
+      <div class="case-detail">
+        <b>Fake “Second Coming” Sects</b><br>
+        - Direction: False (Personal gain/ego)<br>
+        - Freedom: False (Demand for blind obedience)<br>
+        - Universality: False (Only “chosen” followers)<br>
+        <span class="conclusion">→ Result: False ✗ (Fake on all grounds)</span>
       </div>
-      <!-- 필요시 계속 추가 -->
     </div>
 
-    <div class="submit">
-      <b>새 사례 제안/등록:</b><br>
-      <a href="https://github.com/nettalk72/ontoformula/discussions" target="_blank">GitHub Discussions에서 제안하기</a><br>
-      또는 이메일: <b>nettalk72 [at] naver.com</b> (양식 자유)
+    <!-- CASE 2: Open Source Project -->
+    <div class="case-block">
+      <div class="case-title">[Technology] — OntoMotoOS (Open Source Philosophy)</div>
+      <div class="sector">(기술/철학 · Tech/Philosophy)</div>
+      <div class="case-detail">
+        <b>OntoMotoOS / Kim Yoochul</b><br>
+        - Direction: True (Liberation & Coexistence)<br>
+        - Freedom: True (Right to leave, fork, or modify)<br>
+        - Universality: True (Open-source, anyone can join)<br>
+        <span class="conclusion">→ Result: True ✓ (A system mathematically designed for “True”)</span>
+      </div>
+      <div class="case-detail">
+        <b>Closed-Source Monopoly (Big Tech)</b><br>
+        - Direction: False (Profit & control-centric)<br>
+        - Freedom: False (Vendor lock-in, forced ecosystem)<br>
+        - Universality: False (Access for selected users)<br>
+        <span class="conclusion">→ Result: False ✗ (Fails all three)</span>
+      </div>
     </div>
-    <div class="backlink">
-      <a href="index.html">&larr; 공식 페이지로 돌아가기</a>
+
+ <!-- CASE 3: Business/Ethics -->
+    <div class="case-block">
+      <div class="case-title">[Business] — Corporate Practice</div>
+      <div class="sector">(비즈니스 · Business)</div>
+      <div class="case-detail">
+        <b>Ethical Company (ESG/공정기업)</b><br>
+        - Direction: True (Long-term value, social impact)<br>
+        - Freedom: True (Empowers employees/customers)<br>
+        - Universality: True (Inclusive, no discrimination)<br>
+        <span class="conclusion">→ Result: True ✓ (Rare but possible!)</span>
+      </div>
+      <div class="case-detail">
+        <b>Unethical Company (예: 착취형 플랫폼/임금체불)</b><br>
+        - Direction: False (Profit above all)<br>
+        - Freedom: False (Suppression of voice, forced overtime)<br>
+        - Universality: False (Excludes/abuses certain groups)<br>
+        <span class="conclusion">→ Result: False ✗</span>
+      </div>
+    </div>
+
+    <!-- CASE 4: Politics/Governance -->
+    <div class="case-block">
+      <div class="case-title">[Politics] — Democratic vs. Authoritarian System</div>
+      <div class="sector">(정치/거버넌스 · Politics/Governance)</div>
+      <div class="case-detail">
+        <b>Liberal Democracy (이상적 경우)</b><br>
+        - Direction: True (Public good, citizen rights)<br>
+        - Freedom: True (Speech, press, association)<br>
+        - Universality: True (Universal suffrage/equality)<br>
+        <span class="conclusion">→ Result: True ✓</span>
+      </div>
+      <div class="case-detail">
+        <b>Authoritarian Regime (권위주의 국가)</b><br>
+        - Direction: False (Power retention)<br>
+        - Freedom: False (Speech/press suppression)<br>
+        - Universality: False (Minority exclusion/privilege)<br>
+        <span class="conclusion">→ Result: False ✗</span>
+      </div>
+    </div>
+
+    <!-- CASE 5: Community/Club/School -->
+    <div class="case-block">
+      <div class="case-title">[Community] — Club, School, or Online Forum</div>
+      <div class="sector">(공동체 · Community)</div>
+      <div class="case-detail">
+        <b>Open Community</b><br>
+        - Direction: True (Mutual support)<br>
+        - Freedom: True (Freedom to participate or leave)<br>
+        - Universality: True (No exclusion, everyone welcome)<br>
+        <span class="conclusion">→ Result: True ✓</span>
+      </div>
+      <div class="case-detail">
+        <b>Closed Clique/Exclusive Club</b><br>
+        - Direction: False (Elitism, self-benefit)<br>
+        - Freedom: False (Forced conformity, exit is punished)<br>
+        - Universality: False (Entry only by invitation/connection)<br>
+        <span class="conclusion">→ Result: False ✗</span>
+      </div>
+    </div>
+
+    <!-- CASE 6: Artificial Intelligence -->
+    <div class="case-block">
+      <div class="case-title">[AI/Technology] — Artificial Intelligence Platform</div>
+      <div class="sector">(AI · 인공지능)</div>
+      <div class="case-detail">
+        <b>Open/Responsible AI (예: OntoMotoOS 기반)</b><br>
+        - Direction: True (Augment human good, benefit all)<br>
+        - Freedom: True (User controls their data/exit, open source)<br>
+        - Universality: True (Accessible for everyone, transparency)<br>
+        <span class="conclusion">→ Result: True ✓</span>
+      </div>
+      <div class="case-detail">
+        <b>Dark Pattern AI/Surveillance Tech</b><br>
+        - Direction: False (Manipulation, data mining)<br>
+        - Freedom: False (No opt-out, lock-in)<br>
+        - Universality: False (Targeted for profit/power)<br>
+        <span class="conclusion">→ Result: False ✗</span>
+      </div>
+    </div>
+
+    <div class="note">
+      <b>Expand the Encyclopedia!</b><br>
+      Anyone can propose new cases for this encyclopedia.<br>
+      <a href="https://github.com/nettalk72/ontoformula/discussions" target="_blank" style="color:#1578c4; font-weight:bold;">
+        ▶ 사례/판별식 토론&제안방 바로가기
+      </a>
+    </div>
+    <div style="margin-top:34px; font-size:0.99em; color:#666;">
+      <a href="index.html" style="color:#2477bb; text-decoration:underline;">
+        ◀ 판별 공식 백과사전(메인)으로 돌아가기
+      </a>
     </div>
   </div>
 </body>
